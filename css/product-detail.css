@@ -1,0 +1,310 @@
+div.position {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: green;
+}
+div.rate > i{
+    color: orange;
+}
+div.product-detail-header {
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+}
+div.product-detail-header > h1 {
+    margin: 0;
+    margin-right: 15px;
+}
+div.interact > a {
+    display: block;
+    background-color: #4267b2;
+    color: white;
+    padding: 3px;
+    border-radius: 6px;
+    font-size: 90%;
+    width: 58.8px;
+    height: 16.8px;
+    margin-left: 10px;
+}
+div.interact {
+    display: flex;
+    margin-left: auto;
+}
+div.product-detail-content{
+    display: flex;
+    justify-content: space-between;
+}
+div.product-detail-content-left{
+    width: 60%;
+}
+div.product-detail-content-right{
+    width: 35%;
+}
+div.product-detail-content-left-img > a > img{
+    width: 100%;
+}
+div.product-detail-content-left-img {
+    width: 605.4px;
+    height: 605.4px;
+}
+ul.info > li{
+    margin: 15px;
+    font-size: 105%;
+}
+.content-text{
+    font-size: 108%;
+}
+div.iframe {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+div.rating {
+    border: 1px solid #bfbfbf;
+    padding: 25px;
+    margin-top: 40px;
+}
+div.rating > h2 {
+    margin-top: 0;
+}
+div.rating-action {
+    border: 1px solid green;
+    padding: 5px 0 5px 35px;
+    display: flex;
+    justify-content: space-between;
+}
+div.rating-left {
+    border-right: 1px solid #d9d9d9;
+    padding: 5px 50px 5px 0;
+}
+div.rating-left-content {
+    display: flex;
+}
+div.rating-left-content > span:first-child{
+    margin-right: 2px;
+}
+div.rating-left-content > span {
+    color: #737373;
+}
+div.rating-left-content > i{
+    color: grey;
+}
+div.rating-bar {
+    width: 200px;
+    height: 5px;
+    display: inline-block;
+    margin: 0 10px;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    margin-top: 9px;
+}
+div.rating-action-right > button {
+    padding: 10px 20px 10px 20px;
+    color: white;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+}
+div.rating-action-right > button:hover{
+    background-color: 	#0080ff;
+    transition: 0.3s;
+}
+div.rating-action-right {
+    margin: auto;
+}
+div.price-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+div.price-header > div > span:first-child {
+    color: #d0021c;
+    font-size: 150%;
+}
+div.price-header > div > span:nth-child(2) {
+    color: #666;
+    font-size: 16px;
+    margin: 5px;
+}
+div.price-header > div:last-child > i{
+    color:#498d3d;
+    font-size: 80%;
+    margin: 3px;
+}
+div.gift{
+    border: 1px solid #e0e0e0;
+    border-radius: 4px; 
+}
+div.gift > div > i {
+    margin-right: 4px;
+}
+div.gift > div {
+    padding: 15px 15px 15px 15px;
+}  
+div.gift > div:first-child {
+    background-color: #f6f6f6;
+} 
+div.gift > div:last-child > ul{
+    padding: 0;
+    margin: 0 0 0 15px;
+}
+div.buy {
+    padding: 13px 0 13px 0;
+    display: flex;
+    justify-content: space-between;
+}
+div.buy > button {
+    cursor: pointer;
+    width: calc(50% - 5px);
+    text-align: center;
+    border: none;
+    padding: 15px 0 15px 0;
+    border-radius: 4px;
+    color: white;
+}
+div.buy > button:first-child{
+    background-color: orangered;
+}
+div.buy > button:last-child{
+    background-color: green;
+}
+div.buy > button:first-child:hover{
+    background-color: green;
+    transition: 0.3s;
+}
+.call{
+    margin: 0;
+    font-size: 100%;
+    text-align: center;
+}
+.call > a{
+    color: green;
+}
+.buy-info {
+    font-size: 140%;
+}
+.table-info{
+    width: 100%;
+    border: none;
+}
+.table-info > tbody > tr > td:nth-child(1) {
+    width: 40%;
+}
+.table-info > tbody > tr:nth-child(odd) {
+    background-color: #f6f6f6;
+}
+.table-info > tbody > tr > td{
+    padding: 10px;
+}
+.product-recommend-header {
+    margin-top: 70px;
+}
+div.product-recommend {
+    display: flex;
+}
+div.product-recommend-item {
+    border: 1px solid #e9e9e9;
+    padding: 30px 0 50px 0px;
+    width: 25%;
+}
+div.product-recommend-item > div > a > img {
+    width: 100%;
+}
+div.product-recommend-item-img {
+    width: 70%;
+    margin: auto;
+}
+div.product-recommend-item > div:nth-child(2){
+    font-size: 105%;
+    padding: 10px 0 10px 30px;
+}
+.product-recommend-item-info {
+    font-size: 93%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #808080;
+    padding-left: 30px;
+}
+.product-recommend-item-info > li {
+    margin: 10px 0 10px 0;
+}
+.product-recommend-item-info > li > i{
+    color: #498d3d;
+    margin-right: 4px;
+    font-size: 80%;
+}
+.product-recommend-item-price {
+    font-size: 18px;
+    color: #e10c00;
+    padding-left: 30px;
+}
+div.commend {
+    margin: 50px 0 50px 0;
+}
+div.commend-user {
+    display: flex;
+    margin-top: 15px;
+}
+div.commend-user > span{
+    margin: 0 20px 0 10px;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 105%;
+}
+div.commend-user > div:first-child{
+    padding: 4px;
+    background-color: #ccc;
+    color: #666;
+}
+div.commend-user > div:last-child {
+    color: white;
+    padding: 4px 9px 4px 9px;
+    background-color: #498d3d;
+    font-size: 70%;
+    width: 7%;
+    margin: auto 0;
+}
+div.commend-content {
+    margin: 5px 0 10px 40px;
+}
+div.commend-content > div:first-child{
+    margin-bottom: 7px;
+    font-size: 103%;
+}
+div.commend-content > div:last-child > a{
+    color: #498FE1;
+}
+div.commend-content > div:last-child > span:nth-child(2) {
+    font-size: 150%;
+    color: #808080;
+}
+div.commend-content > div:last-child > span:nth-child(3) {
+    color: #808080;
+    font-size: 95%;
+}
+div.commend > h3 {
+    padding: 25px 0 10px 0;
+}
+div.commend > textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    outline: none;
+}
+div.commend > button {
+    padding: 10px 20px 10px 20px;
+    color: white;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}

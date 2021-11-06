@@ -1,0 +1,81 @@
+span.highlight {
+    color: red;
+}
+div.login {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0 70px 0;
+}
+div.login-left {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border-right: 1px solid #e2e2e2;
+}
+div.login-right {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+div.input {
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+}
+div.input > input {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #e2e2e2;
+}
+div.input > p{
+    text-align: left;
+    margin: 0 0 5px 0;
+}
+button.login {
+    display: block;
+    margin-left: 120px;
+    width: 63%;
+    background-color: #498d3d;
+    color: white;
+    border: none;
+    padding: 9px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button.login:hover {
+    background-color: #1b99e9;
+    transition: 0.3s;
+}
+div.login-utils {
+    display: flex;
+    justify-content: space-between;
+    width: 63%;
+    margin-left: 120px;
+    padding: 5px 0 5px 0;
+}
+div.login-social {
+    margin-top: 25px;
+}
+div.login-social > button{
+    display: flex;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: #355494;
+    font-size: 90%;
+}
+div.login-social > button > div:first-child{
+    margin: 0 20px 0 5px;
+}
+div.login-social > button:last-child{
+    background-color: #d3352c;
+}
+div.login-social > button:last-child > div:first-child{
+    margin: 0 11px 0 4px;
+}

@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/all.min.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<link href="css/login.css" rel="stylesheet">
+	<script>
+		function init(){
+			var images = document.querySelectorAll(".subImg img")
+			for (var i = 0; i < images.length ; i++)
+				images[i].onclick = function(){
+					var path = this.src
+					var img = document.querySelector(".mainImg img")
+					img.setAttribute("src", path)
+				}
+
+			var clock = document.getElementById("clock")
+            setInterval(function() {
+                var d = new Date()  
+                clock.innerText = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`
+            }, 1000)
+
+			var ball = document.getElementById("ball")
+			var area = document.getElementsByClassName("header1-content")[0]
+
+			var timer = null
+			var left = 0, t=0, incX=5, incY=5
+			timer = setInterval(function() {
+				if (t < 0 || t + ball.offsetHeight >= area.offsetHeight)
+					incY = -incY;
+				if (left < 0 || left + ball.offsetWidth >= area.offsetWidth)
+					incX = -incX;
+
+				left += incX
+				t += incY
+				ball.style.top = t + "px"
+				ball.style.left = left + "px"
+			}, 15)
+		}
+
+	</script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".gototop").hide()
+			$(window).scroll(function(){
+				if ($(this).scrollTop() >= 100)
+           			$(".gototop").show("slow")
+          		else
+           			$(".gototop").hide("slow")
+			})
+			$(".gototop").click(function(){
+				$("html, body").animate({
+					scrollTop: 0
+				}, 1200)
+			})
+		})
+	</script>
+</head>
+<body onload="init()">
+    <div class="gototop">
+		<a href="javascript:;"><img src="images/scrolltop.png" alt="scrolltop"></a>
+	 </div>
+	<nav>
+		<ul class="menu">
+			<li><a href="index.html">Trong's Football</a></li>
+			<li><a href="tintuc.html">Tin tức</a></li>
+		</ul>
+	</nav>
+	<aside class="ad">
+		<div class="ad-item">
+			<div class="label">HOT</div>
+			<h1>LIÊN HỆ HÔM NAY ĐỂ NHẬN ƯU ĐÃI CỰC KHỦNG</h1>
+			<div class="label">HOT</div>
+		</div>	
+	</aside>
+	<div class="header1">
+		<div class="header1-img">
+			<img src="images/banner.png" />
+		</div>
+		<div class="header1-content">
+			<img id="ball" src="images/ball.png" alt="ball" />
+		</div>
+		<div class="header1-cart">
+			<a href="#"><i class="fas fa-shopping-cart"></i>Giỏ hàng</a>
+		</div>
+		<div class="header1-login">
+			<a href="login.html"><i class="fas fa-user"></i>Đăng nhập</a>
+		</div>
+		<div class="header1-register">
+			<a href="sale.html"><i class="fas fa-dollar-sign"></i></i>Sale</a>
+		</div>
+	</div>
+    <section>
+        <div class="login">
+            <div class="login-left">
+                <h2>ĐĂNG NHẬP</h2>
+                <div class="input">
+                    <p>Email:</p>
+                    <input type="text"/>
+                </div>
+                <div class="input">
+                    <p>Mật khẩu:</p>
+                    <input type="password"/>
+                </div>
+                <button class="login">ĐĂNG NHẬP</button>
+                <div class="login-utils">
+                    <div>
+                        <input type="radio">Ghi nhớ đăng nhập</input>
+                    </div>
+                    <a href="#">Quên mật khẩu?</a>
+                </div>
+                <div class="login-social">
+                    <button>
+                        <div><i class="fab fa-facebook-f"></i></div>
+                        <div>Đăng nhập bằng Facebook</div>
+                    </button>
+                    <button>
+                        <div><i class="fab fa-google-plus-g"></i></div>
+                        <div>Đăng nhập bằng Google</div>
+                    </button>
+                </div>
+            </div>
+            <div class="login-right">
+                <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
+                <div class="input">
+                    <p>Họ và tên(<span class="highlight">*</span>):</p>
+                    <input type="text"/>
+                </div>
+                <div class="input">
+                    <p>Email(<span class="highlight">*</span>):</p>
+                    <input type="text"/>
+                </div>
+                <div class="input">
+                    <p>Số điện thoại(<span class="highlight">*</span>):</p>
+                    <input type="number"/>
+                </div>
+                <div class="input">
+                    <p>Mật khẩu(<span class="highlight">*</span>):</p>
+                    <input type="password"/>
+                </div>
+                <div class="input">
+                    <p>Nhập lại mật khẩu(<span class="highlight">*</span>):</p>
+                    <input type="password"/>
+                </div>
+                <div>
+                    <div class="input">
+                        <p>Ngày sinh:</p>
+                        <input type="date" />
+                    </div>
+                </div>
+                <div class="input">
+                    <p>Địa chỉ(<span class="highlight">*</span>):</p>
+                    <input type="text"/>
+                </div>
+                <button class="login">ĐĂNG KÝ TÀI KHOẢN</button>
+            </div>
+        </div>    
+    </section>
+</body>
+<footer>
+	<div class="col1">
+		<h3>Thông Tin Liên Hệ</h3>
+		<p>Họ tên: Nguyễn Huy Trọng</p>
+		<p>Khoa công nghệ thông tin</p>
+		<p>Trường đại học Mở tp.HCM</p>
+	</div>
+	<div class="col2">
+		<h3>Giờ Hành Chính</h3>
+		<p>Thứ hai - Thứ sáu: 9:00 - 17:00</p>
+		<p>Thứ bảy, chủ nhật: Hẹn riêng</p>
+		<p>Giờ hiện tại:</p>
+		<p id="clock">00:00:00</p>
+	</div>
+	<div class="col3">
+		<div>
+			<i class="fas fa-home"></i>
+			<h4>Địa chỉ</h4>
+			<p>362 Nguyễn Văn Công, quận Gò Vấp, tp.HCM</p>
+		</div>
+		<div>
+			<i class="fas fa-phone"></i>
+			<h4>Điện thoại</h4>
+			<p>0777574547</p>
+		</div>
+		<div>
+			<i class="fas fa-envelope"></i>
+			<h4>Email</h4>
+			<p>1851050160trong@ou.edu.vn</p>
+		</div>
+	</div>
+</footer>
+</html>

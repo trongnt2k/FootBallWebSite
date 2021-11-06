@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/all.min.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<link href="css/product-detail.css" rel="stylesheet">
+<script src="js/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".gototop").hide()
+			$(window).scroll(function(){
+				if ($(this).scrollTop() >= 100)
+           			$(".gototop").show("slow")
+          		else
+           			$(".gototop").hide("slow")
+			})
+			$(".gototop").click(function(){
+				$("html, body").animate({
+					scrollTop: 0
+				}, 1200)
+			})
+		})
+	</script>
+    <script>
+		function init(){
+			var clock = document.getElementById("clock")
+            setInterval(function() {
+                var d = new Date()  
+                clock.innerText = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`
+            }, 1000)
+
+			var ball = document.getElementById("ball")
+			var area = document.getElementsByClassName("header1-content")[0]
+
+			var timer = null
+			var left = 0, t=0, incX=5, incY=5
+			timer = setInterval(function() {
+				if (t < 0 || t + ball.offsetHeight >= area.offsetHeight)
+					incY = -incY;
+				if (left < 0 || left + ball.offsetWidth >= area.offsetWidth)
+					incX = -incX;
+
+				left += incX
+				t += incY
+				ball.style.top = t + "px"
+				ball.style.left = left + "px"
+			}, 15)
+		}
+
+	</script>
+</head>
+<body onload="init()">
+    <div class="gototop">
+		<a href="javascript:;"><img src="images/scrolltop.png" alt="scrolltop"></a>
+	 </div>
+	<nav>
+		<ul class="menu">
+			<li><a href="index.html">Trong's Football</a></li>
+			<li><a href="tintuc.html">Tin tức</a></li>
+		</ul>
+	</nav>
+    <div class="header1">
+		<div class="header1-img">
+			<img src="images/banner.png" />
+		</div>
+		<div class="header1-content">
+			<img id="ball" src="images/ball.png" alt="ball" />
+		</div>
+		<div class="header1-cart">
+			<a href="#"><i class="fas fa-shopping-cart"></i>Giỏ hàng</a>
+		</div>
+		<div class="header1-login">
+			<a href="login.html"><i class="fas fa-user"></i>Đăng nhập</a>
+		</div>
+		<div class="header1-register">
+			<a href="sale.html"><i class="fas fa-dollar-sign"></i>Sale</a>
+		</div>
+	</div>
+    
+    <section>
+        <div class="position">
+            <a href="index.html">Trang chủ</a>
+            <span>></span>
+            <a href="sale.html">Sale</a>
+            <span>></span>
+            <a href="product-detail.html">Chi tiết</a>
+        </div>
+        <div class="product-detail-header">
+            <h1>Quả bóng đá VBE Star Red</h1>
+            <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="interact">
+                <a href="#"><i class="far fa-thumbs-up"></i>Thích 9</a>
+                <a href="#"><i class="fab fa-facebook"></i>Chia sẻ</a>
+            </div>     
+        </div>
+        <div class="product-detail-content">
+            <div class="product-detail-content-left"> 
+                <div class="product-detail-content-left-img"><a href="https://res.cloudinary.com/dzi8njrne/image/upload/v1636112834/ball1_dtvo9n.jpg"><img src="images/ball1.jpg"></a></div>
+                <p class="content-text">Quả bóng đá số 5 STAR RED được làm từ chất liệu PU - PVC dai bền. Phần ruột bóng được làm từ chất liệu cao cấp, cho khả năng giữ hơi cực tốt. Bóng đá số 5 STAR RED có thiết kế đẹp mắt, thường dùng cho luyện tập và thi đấu phong trào. </p>
+                <h1>Thông số kĩ thuật quả bóng VBE STAR</h1>
+                <ul class="info">
+                    <li>Trọng lượng quả bóng đá: 400 – 450gram</li>
+                    <li>Áp suất quả bóng khoảng 8,5 – 15,6 psi</li>
+                    <li>Chu vi quả bóng: 69 – 71cm</li>
+                    <li>Đường kính quả bóng: 22 – 23cm</li>
+                    <li>Bán kính quả bóng: 11 – 11,5cm</li>
+                </ul>
+                <h1>Đặc điểm nổi bật quả bóng VBE STAR</h1>
+                <p class="content-text">Bóng VBE STAR RED được làm từ chất PU cao cấp, có độ bền cao, độ nảy cực chuẩn, đạt tiêu chuẩn thi đấu. Bóng có cấu tạo nhiều lớp, ruột làm bằng cao su cao cấp, giữ hơi tốt. Bóng có phù hợp với nhiều loại sân như sân cỏ thường, sân cỏ nhân tạo... Bóng không bị thấm nước khi trời mưa</p>
+                <h2>Video, hình ảnh</h2>
+                <div class="iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CO47a5z-vsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h1>Cách bảo quản</h1>
+                <ul class="info">
+                    <li>Vỏ bóng đá được làm bằng da vì vậy nên hạn chế đá ở sân xi măng, bê tông tránh gây mòn da và đứt chỉ, tuổi thọ bóng không cao.</li>
+                    <li>Tránh để Bóng tiếp xúc nhiều với nước, vì khi ngấm nước lâu ngày lớp da rất dễ bị bục, hơn nữa ngấm nước bóng sẽ rất nặng gây khó khăn khi tập luyện.</li>
+                    <li>Tránh tập luyện nơi có các vật sắc nhọn cứng như mảnh chai, thép gai, đinh sắt, đá nhọn...</li>
+                    <li>Khi sử dụng xong lau chùi bóng sạch sẽ, để nơi khô ráo thoáng mát, tránh nơi ánh nắng trực tiếp và nhiệt độ cao. </li>
+                </ul>
+                <div class="rating">
+                    <h2>Đánh giá sản phẩm</h2>
+                    <p>Có <b>0</b> đánh giá <b>về Quả bóng đá VBE Star Red</b></p>
+                    <div class="rating-action">
+                        <div class="rating-left">
+                            <div class="rating-left-content">
+                                <span>5</span>
+                                <i class="fas fa-star"></i>
+                                <div class="rating-bar"></div>
+                                <span><b>0</b> đánh giá</span>
+                            </div>
+                            <div class="rating-left-content">
+                                <span>4</span>
+                                <i class="fas fa-star"></i>
+                                <div class="rating-bar"></div>
+                                <span><b>0</b> đánh giá</span>
+                            </div>
+                            <div class="rating-left-content">
+                                <span>3</span>
+                                <i class="fas fa-star"></i>
+                                <div class="rating-bar"></div>
+                                <span><b>0</b> đánh giá</span>
+                            </div>
+                            <div class="rating-left-content">
+                                <span>2</span>
+                                <i class="fas fa-star"></i>
+                                <div class="rating-bar"></div>
+                                <span><b>0</b> đánh giá</span>
+                            </div>
+                            <div class="rating-left-content">
+                                <span>1</span>
+                                <i class="fas fa-star"></i>
+                                <div class="rating-bar"></div>
+                                <span><b>0</b> đánh giá</span>
+                            </div>
+                        </div>
+                        <div class="rating-action-right">
+                            <button>Gửi đánh giá của bạn</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-content-right"> 
+                <div class="price-header">
+                    <div>
+                        <span><b>450.000₫</b></span>
+                        <span><del>600.000₫</del></span>
+                    </div>
+                    <div><i class="fas fa-check-circle"></i> Còn hàng</div>
+                </div>
+                <div class="gift">
+                    <div><i class="fas fa-gift"></i> <b>KHUYẾN MẠI KÈM THEO</b></div>
+                    <div>
+                        <ul>
+                            <li>Tặng lưới đựng bóng và kim bơm bóng</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="buy">
+                    <button>MUA NGAY</button>
+                    <button>CHAT ONLINE</button>
+                </div>
+                <p class="call">Gọi đặt mua <a href="tel:+84777574547">0777574547</a> (8h30 - 20h00 Từ T2- CN)</p>
+                <p class="buy-info"><b>Thông tin sản phẩm</b></p>
+                <table class="table-info" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td>Thương hiệu</td>
+                            <td>VEC Sport</td>
+                        </tr>
+                        <tr>
+                            <td>Xuất xứ</td>
+                            <td>Trung Quốc</td>
+                        </tr>
+                        <tr>
+                            <td>Size</td>
+                            <td>Số 5</td>
+                        </tr>
+                        <tr>
+                            <td>Chất lượng</td>
+                            <td>FIFA Quality</td>
+                        </tr>
+                        <tr>
+                            <td>Loại bóng</td>
+                            <td>Ép nhiệt</td>
+                        </tr>
+                        <tr>
+                            <td>Cấu tạo bề mặt</td>
+                            <td>32 miếng</td>
+                        </tr>
+                        <tr>
+                            <td>Màu sắc</td>
+                            <td>Trắng, xanh, đỏ, đen</td>
+                        </tr>
+                        <tr>
+                            <td>Đóng gói</td>
+                            <td>Túi, lưới, kim bơm</td>
+                        </tr>
+                        <tr>
+                            <td>Bảo hành</td>
+                            <td>Đổi trả 1-1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1 class="product-recommend-header">Sản phẩm liên quan</h1>
+        <div class="product-recommend">
+            <div class="product-recommend-item">
+                <div class="product-recommend-item-img"><a href="#"><img src="images/ball2.jpg"></a></div>
+                <div><a href="#">Quả bóng đá Nike Strike</a></div>
+                <span class="product-recommend-item-price"><b>750.000₫</b></span>   
+                <ul class="product-recommend-item-info">
+                    <li><i class="fas fa-check-circle"></i>60% cao su/15% polyurethane/13% polyester/12% EVA</li>
+                    <li><i class="fas fa-check-circle"></i>Màu sắc hiển thị: Trắng/Đen/Lime Glow</li>
+                    <li><i class="fas fa-check-circle"></i>Phong cách: DB7853-108</li>
+                </ul>
+            </div>
+            <div class="product-recommend-item">
+                <div class="product-recommend-item-img"><a href="#"><img src="images/ball3.jpg"></a></div>
+                <div><a href="#">Quả bóng đá Nike Pitch</a></div>
+                <span class="product-recommend-item-price"><b>500.000₫</b></span>   
+                <ul class="product-recommend-item-info">
+                    <li><i class="fas fa-check-circle"></i>60% cao su/15% polyurethane/13% polyester/12% EVA</li>
+                    <li><i class="fas fa-check-circle"></i>Màu sắc hiển thị: Trắng/Đen/Lime Glow</li>
+                    <li><i class="fas fa-check-circle"></i>Phong cách: DB7964-105</li>
+                    <li><i class="fas fa-check-circle"></i>Quốc gia/Khu vực xuất xứ: Việt Nam</li>
+                </ul>
+            </div>
+            <div class="product-recommend-item">
+                <div class="product-recommend-item-img"><a href="#"><img src="images/ball4.jpg"></a></div>
+                <div><a href="#">Quả bóng đá Adidas Tiro League TB</a></div>
+                <span class="product-recommend-item-price"><b>550.000₫</b></span>   
+                <ul class="product-recommend-item-info">
+                    <li><i class="fas fa-check-circle"></i>Thương hiệu: Adidas</li>
+                    <li><i class="fas fa-check-circle"></i>Bề mặt: 100% TPU/Ruột Cao su</li>
+                    <li><i class="fas fa-check-circle"></i>Màu sắc: Đỏ, trắng</li>
+                    <li><i class="fas fa-check-circle"></i>Size: 5</li>
+                    <li><i class="fas fa-check-circle"></i>Dùng cho Sân cỏ nhân tạo, sân tự nhiên</li>
+                </ul>
+            </div>
+            <div class="product-recommend-item">
+                <div class="product-recommend-item-img"><a href="#"><img src="images/ball5.jpg"></a></div>
+                <div><a href="#">Quả bóng đá Adidas HomeBall</a></div>
+                <span class="product-recommend-item-price"><b>700.000₫</b></span>   
+                <ul class="product-recommend-item-info">
+                    <li><i class="fas fa-check-circle"></i>Thương hiệu: Adidas</li>
+                    <li><i class="fas fa-check-circle"></i>Vỏ làm từ 100% PU</li>
+                    <li><i class="fas fa-check-circle"></i>Màu sắc: Xanh, Trắng</li>
+                    <li><i class="fas fa-check-circle"></i>Dành cho tập luyện và thi đấu</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="commend">
+            <span>Có <b>0</b> bình luận, đánh giá <b>về Quả bóng đá VBE Star Red</b></span>
+            <div class="commend-user">
+                <div>TV</div>
+                <span><b>Quản trị viên</b></span>
+                <div>QUẢN TRỊ VIÊN</div>
+            </div>
+            <div class="commend-content">
+                <div>Xin chào quý khách. Tôi là Nguyễn Huy Trọng, quý khách hãy để lại bình luận, tôi sẽ phản hồi sớm</div>
+                <div>
+                    <a href="#">Trả lời</a>
+                    <span>.</span>
+                    <span>3 ngày trước</span>
+                </div>
+            </div>
+            <h3>Bình luận sản phẩm</h3>
+            <textarea placeholder="Viết bình luận của bạn..."></textarea>
+            <button>Gửi bình luận</button>
+        </div>
+    </section>
+</body>
+<footer>
+    <div class="col1">
+        <h3>Thông Tin Liên Hệ</h3>
+        <p>Họ tên: Nguyễn Huy Trọng</p>
+        <p>Khoa công nghệ thông tin</p>
+        <p>Trường đại học Mở tp.HCM</p>
+    </div>
+    <div class="col2">
+        <h3>Giờ Hành Chính</h3>
+        <p>Thứ hai - Thứ sáu: 9:00 - 17:00</p>
+        <p>Thứ bảy, chủ nhật: Hẹn riêng</p>
+        <p>Giờ hiện tại:</p>
+        <p id="clock">00:00:00</p>
+    </div>
+    <div class="col3">
+        <div>
+            <i class="fas fa-home"></i>
+            <h4>Địa chỉ</h4>
+            <p>362 Nguyễn Văn Công, quận Gò Vấp, tp.HCM</p>
+        </div>
+        <div>
+            <i class="fas fa-phone"></i>
+            <h4>Điện thoại</h4>
+            <p>0777574547</p>
+        </div>
+        <div>
+            <i class="fas fa-envelope"></i>
+            <h4>Email</h4>
+            <p>1851050160trong@ou.edu.vn</p>
+        </div>
+    </div>
+</footer>

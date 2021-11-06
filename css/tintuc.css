@@ -1,0 +1,128 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: green;
+}
+div.news {
+    border-bottom: 1px solid gray;
+}
+div.news > span {
+    display: block;
+    font-size: 200%;
+    width: 8%;
+    border-bottom: 4px solid green;
+}
+div.news-head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+div.news-left {
+    width: 48%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+div.news-right {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.news-right > a {
+    font-size: 120%;
+}
+div.news-right > a:hover {
+    color: green;
+    transform: scale(1.01);
+}
+div.news-right > a > div {
+    width: 290px;
+    height: 200px;
+}
+p.date {
+    color: gray;
+    margin: 0;
+}
+div.position {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+div.news-content {
+    display: flex;
+    justify-content: space-between;
+}
+div.news-content-left {
+    width: 60%;
+}
+div.news-content-left > div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+div.news-content-left > div > a {
+    width: 43%;
+}
+div.news-content-left > div > a:hover {
+    transform: scale(1.01);
+}
+div.news-content-left > div > a > img {
+    width: 100%;
+}
+div.news-content-left > div > div {
+    width: 55%;
+}
+div.news-content-right {
+    width: 35%;
+}
+div.news-content-right > h1{
+    background-color:	#ecececa3;
+    margin: 0;
+    padding: 10px;
+    margin-top: 30px;
+    border-left: 7px solid green;
+}
+div.news-content-right > div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+div.news-content-right > div > a > img {
+    width: 100%;
+}
+div.news-content-right > div > a {
+    width: 30%;
+}
+div.news-content-right > div > div {
+    width: 65%;
+    font-size: 110%;
+}
+div.pagination > a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin: 3px;
+}
+div.pagination > a:nth-child(2) {
+    background-color: green;
+    color: white;
+}
+div.pagination > a:hover:not(:nth-child(2)){
+    background-color: #0080ff;
+    color: white;
+}
+div.pagination {
+    margin: auto;
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 120px;
+}

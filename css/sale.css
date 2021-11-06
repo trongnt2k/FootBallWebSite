@@ -1,0 +1,96 @@
+div.position {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: green;
+}
+div.sale {
+    border-bottom: 1px solid gray;
+}
+div.sale > span {
+    display: block;
+    font-size: 200%;
+    width: 14%;
+    border-bottom: 4px solid green;
+}
+div.sale-content {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.sale-item{
+    width: 15.67%;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+    padding: 25px;
+    position: relative;
+}
+div.sale-item > a{
+    font-size: 105%;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+span.price {
+    color:red;
+    font-size: 120%;
+}
+span.discount-price {
+    color:gray;
+}
+span.discount {
+    color:red;
+}
+div.sale-item > div > a > img{
+    width: 100%;
+}
+@keyframes doimau {
+    20% {
+        background-color: gold;
+    }
+    50% {
+        background-color: red;
+    }
+    75% {
+        background-color: darkcyan;
+    }
+ }
+ 
+div.label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: gold;
+    color: blue;
+    padding: 5px 10px;
+    border-radius: 0 0 0 10px;
+    animation: doimau 1s infinite;
+ }
+div.pagination {
+    margin: auto;
+    width: 35%;
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
+div.pagination > a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin: 3px;
+}
+div.pagination > a:nth-child(2) {
+    background-color: green;
+    color: white;
+}
+div.pagination > a:hover:not(:nth-child(2)){
+    background-color: #0080ff;
+    color: white;
+}
