@@ -537,3 +537,110 @@ div.social > div:last-child {
     width: 90%;
     padding: 12px 0 12px 0;
 }
+/*Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    footer{
+        flex-direction: column;
+        padding: 10px 10px 10px 10px;
+    }
+    div.col1 > h3{
+        width: 49%;
+    }
+    div.col2 > h3{
+        width: 43%;
+    }
+    div.header1-img {
+        display: none;
+    }
+    div.header1-content {
+        display: none;
+    }
+    section{
+        width: 100%;
+    }
+    aside{
+        display: none;
+    }
+    div.header1{
+        margin: 0 auto;
+        width: 100%;
+    }
+    div.header1 > div{
+        width: 40% !important;
+    }
+    div.head{
+        flex-direction: column-reverse;
+    }
+    div.head > div{
+        width: 100%;
+    }
+    div.util-item {
+       flex-wrap: wrap;
+    }
+    div.util-item > div:not(:nth-child(4)){
+        width: 33%;
+        padding: 0 0 15px 0;
+    }
+    div.pitch-recommend-item {
+        width: 47.96%;
+        margin: 0 5px 10px 0;
+    }
+    div.pitch-recommend > div:nth-child(3){
+        margin: 0 5px 10px 0;
+    }
+    div.pitch-rating-action{
+        flex-direction: column;
+    }
+    div.pitch-rating-action{
+        padding: 15px 15px 15px 15px;
+    }
+    div.pitch-rating-left{
+        border: none;
+        padding: 0;
+    }
+}
+/*Tablet: width >= 740px and width < 1024px  */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    footer{
+        flex-direction: column;
+    }
+    div.col1 > h3{
+        width: 23%;
+    }
+    div.col2 > h3{
+        width: 20%;
+    }
+    div.header1-img {
+        display: none;
+    }
+    div.header1-content {
+        display: none;
+    }
+    div.header1 > div.header1-cart {
+        width: 19%;
+    }
+    div.header1 > div.header1-login {
+        width: 19%;
+    }
+    div.header1 > div.header1-register {
+        width: 19%;
+    }
+    aside{
+        display: none;
+    }
+    div.head{
+        flex-direction: column-reverse;
+    }
+    div.head > div{
+        width: 100%;
+    }
+    div.pitch-recommend > div:nth-child(3) {
+        margin-right: 22.25px;
+    }
+    div.pitch-recommend-item{
+        width: 45.97%;
+    }
+    section{
+        width: 100%;
+    }
+}

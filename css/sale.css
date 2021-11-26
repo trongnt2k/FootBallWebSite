@@ -94,3 +94,28 @@ div.pagination > a:hover:not(:nth-child(2)){
     background-color: #0080ff;
     color: white;
 }
+/*Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    div.sale > span{
+        width: 46%;
+    }
+    div.sale-item{
+        width: 34.8%;
+    }
+    div.pagination{
+        width: 100%;
+    }
+}
+/*Tablet: width >= 740px and width < 1024px  */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    div.sale-item{
+        width: 41.3%;
+    }
+    div.pagination{
+        width: 100%;
+        padding-left: 220px;
+    }
+    div.sale > span{
+        width: 27%;
+    }
+}

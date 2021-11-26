@@ -79,3 +79,43 @@ div.login-social > button:last-child{
 div.login-social > button:last-child > div:first-child{
     margin: 0 11px 0 4px;
 }
+/*Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    div.login{
+        flex-direction: column;
+        margin: 0 0 50px 0;
+    }
+    div.login > div {
+        width: 100%;
+    }
+    button.login {
+        margin-left: 72px;
+    }
+    div.login-utils {
+        margin-left: 72px;
+    }
+    div.login-social {
+        margin-left: 15px;
+    }
+    div.login-social > button{
+        width: 70%;
+    }
+    div.login-left{
+        margin-bottom: 30px;
+    }
+}
+/*Tablet: width >= 740px and width < 1024px  */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    button.login{
+        margin-left: 78px;
+    }
+    div.login-utils {
+        margin-left: 72px;
+    }
+    div.login-social {
+        margin-left: 15px;
+    }
+    div.login-social > button{
+        width: 65%;
+    }
+}

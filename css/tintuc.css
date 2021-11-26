@@ -126,3 +126,54 @@ div.pagination {
     padding-top: 30px;
     padding-bottom: 120px;
 }
+/*Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    div.news > span{
+        width: 28%;
+    }
+    div.news-head {
+        flex-direction: column;
+    }
+    div.news-head > div {
+        width: 100%;
+    }
+    div.news-right {
+        flex-direction: column;
+    }
+    div.news-content{
+        flex-direction: column;
+    }
+    div.news-content > div{
+        width: 100%;
+    }
+    div.news-content-left > div > div > p:last-child{
+        display: none;
+    }
+    div.news-content-left > div > div > a > h1{
+        margin: 0;
+    }
+    div.pagination {
+        width: 100%;
+    }
+}
+/*Tablet: width >= 740px and width < 1024px  */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    div.news-head {
+        flex-direction: column;
+    }
+    div.news-head > div{
+        width: 100%;
+    }
+    div.news-content{
+        flex-direction: column;
+    }
+    div.news-content > div{
+        width: 100%;
+    }
+    div.news > span {
+        width: 16%;
+    }
+    div.pagination > a:nth-child(5){
+        display: none;
+    }
+}
