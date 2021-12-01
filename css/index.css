@@ -566,7 +566,7 @@ div.social > div:last-child {
         width: 100%;
     }
     div.header1 > div{
-        width: 40% !important;
+        width: calc(100% / 3) !important;
     }
     div.head{
         flex-direction: column-reverse;
