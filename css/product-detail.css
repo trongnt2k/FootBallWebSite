@@ -342,7 +342,7 @@ div.commend > button {
         flex-wrap: wrap;
     }
     div.product-recommend-item {
-        width: 49.4%;
+        width: 48%;
         padding-bottom: 0;
     }
     div.product-recommend-item > div:not(:nth-child(1)){

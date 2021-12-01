@@ -566,7 +566,7 @@ div.social > div:last-child {
         width: 100%;
     }
     div.header1 > div{
-        width: 25% !important;
+        width: calc(46.1875em / 3) !important;
     }
     div.head{
         flex-direction: column-reverse;
@@ -582,7 +582,7 @@ div.social > div:last-child {
         padding: 0 0 15px 0;
     }
     div.pitch-recommend-item {
-        width: 47.96%;
+        width: 47%;
         margin: 0 5px 10px 0;
     }
     div.pitch-recommend > div:nth-child(3){
@@ -616,14 +616,8 @@ div.social > div:last-child {
     div.header1-content {
         display: none;
     }
-    div.header1 > div.header1-cart {
-        width: 19%;
-    }
-    div.header1 > div.header1-login {
-        width: 19%;
-    }
-    div.header1 > div.header1-register {
-        width: 19%;
+    div.header1 > div{
+        width: calc(63.9375em / 3) !important;
     }
     aside{
         display: none;
